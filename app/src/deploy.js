@@ -1,5 +1,6 @@
 import { ethers } from 'ethers';
 import Escrow from './artifacts/contracts/Escrow.sol/Escrow';
+require("dotenv").config
 
 export default async function deploy(signer, arbiter, beneficiary, value) {
   const factory = new ethers.ContractFactory(
